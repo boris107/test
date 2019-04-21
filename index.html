@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+      <a class="header-logo" href="index.html"><img src="img/logo.png" alt="Логотип БИБОСС"></a>
+    </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Как получить баллы?</h1>
+      <div class="container">
+        <section class="points">
+          <div class="wrap-points">
+          <h2>Поставь ссылку на БИБОСС</h2>
+          <b>Заработай баллы!</b>
+          </div>
+          <div class="notebook">
+          <img src="img/mac.png" alt="Ноутбук">
+          <a href="#">Франшиза Dunkin` Donuts на БИБОСС</a>
+          </div>
+          <p>БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании любую из ссылок:</p>
+          <ul class="list-link">
+            <li>Текстовая ссылка «Франшиза <span>[Название]</span> на БИБОСС»</li>
+            <li>Текстовая ссылка «Наша франшиза на БИБОСС»</li>
+            <li>Кнопка "Нравится франшиза" + счетчик популярности</li>
+          </ul>
+          <div class="what-for">
+            <p>Зачем нужны <a href="#">баллы</a>?</p>
+            <b>Больше баллов - выше позиция в выдаче категории</b>
+          </div>
+        </section>
+        <div class="column-points">
+            <section class="rule-points">
+              <h2>Правила размещения ссылки</h2>
+              <ul>
+                <li>Ссылка должна быть индексируемой (без тегов <xmp><noindex> и <nofollow></xmp>)</li>
+                <li>Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта,</li>
+                <li>Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу,</li>
+                <li>При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.</li>
+              </ul>
+            </section>
+            <section class="cost-points">
+              <h2>Стоимость ссылки</h2>
+              <table class="cost-table">
+                <tr>
+                  <td>200 баллов
+                    <tr>
+                      <td>ТиЦ Вашего сайта от 10</td>
+                    </tr>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td>50 баллов
+                    <tr>
+                      <td>ТиЦ Вашего сайта от 0 до 10</td>
+                    </tr>
+                  </td>
+                </tr>
+              </table>
+              </section>
+            </div>
+        <section class="login-link">
+          <h2>Получить рассылку</h2>
+          <!--  -->
+          <form class="login-form"  method="post">
+            <p>
+              <label class="username" for="user-login">Ваше имя</label>
+              <input id="user-login" type="text" name="login" onkeyup="check();" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p>
+              <label for="userNumber">Номер телефона</label>
+              <input class="user-number" id="userNumber" type="tel" name="phonenumber" onkeyup="check();" data-rule-required="true" data-rule-minlength="10" data-msg="Укажите правильный телефон" placeholder="Для начисления баллов и связи с Вами">
+            </p>
+            <p>
+              <label class="frn-name" for="user-frn">Название франшизы</label>
+              <input id="userFirm" class="filt-frn" list="dl_continents" name="filt" onkeyup="check();" placeholder="Например, Subway">
+              <datalist id="dl_continents">
+                  <option value="Проворный ткачик"/>
+                  <option value="ПРОФИ СПОРТ"/>
+                  <option value="Проспект"/>
+                  <option value="Просто Чудо"/>
+                  <option value="Прокат Пони++"/>
+              </datalist>
+            </p>
+            <button id="userButton" class="user-button" type="submit"onClick="ValidPhone();" disabled >Получить ссылку</button>
+          </form>
+        </section>
+        <div class="extra-points">
+          <p><strong>Это еще не все...</strong>Вы можете заработать дополнительные баллы, если разместите на своём сайте новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!</p>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <a href="index.html"><img src="img/footer-logo.png" alt="Логотип БИБОСС"></a>
+      </div>
+    </footer>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/input.mask.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/number.js"></script>
+    <script type="text/javascript" src="js/submit.js"></script>
+  </body>
+</html>
